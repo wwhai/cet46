@@ -13,7 +13,7 @@ public class HttpCathcer {
 	private static String url = "http://www.chsi.com.cn/cet/query?zkzh=NUM&xm=NAME";
 	private static Map<String, String> header = new HashMap<String, String>();
 
-	public synchronized static Cet46 getCet46Score(String examNumber, String examName) {
+	public  static Cet46 getCet46Score(String examNumber, String examName) {
 		String result = "";
 		Cet46 cet46 = new Cet46();
 		url = url.replace("NAME", examName);
